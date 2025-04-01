@@ -2,11 +2,12 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { appTheme } from '../../themes/appTheme';
 import { Fab } from '../../components/Fab';
-import { useNavigation } from '@react-navigation/native';
+import { RootStackParams } from '../../navigator/StackNavigator';
+import { StackScreenProps } from '@react-navigation/stack';
 
-export const Screen2 = () => {
+interface Props extends StackScreenProps<RootStackParams,'Screen2'>{};
 
-    const navigation = useNavigation();
+export const Screen2 = ( {navigation}:Props ) => {
 
     return(
         <View
