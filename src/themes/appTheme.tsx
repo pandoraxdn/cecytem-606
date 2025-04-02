@@ -7,4 +7,10 @@ export const appTheme = StyleSheet.create({
         flex: 1,
         flexDirection: "column",
     },
+    title: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "black",
+        textAlign: "center"
+    }
 });
